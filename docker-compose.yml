@@ -10,5 +10,5 @@ services:
     depends_on:
       - front
   front: 
-    image: feedback-forms-front
-    build: ./kinnearjay.github.io
+    image: kinnyweb
+    build: ./kinnyweb
