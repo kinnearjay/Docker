@@ -1,0 +1,14 @@
+version: '3.7'
+services: 
+  nginx: 
+    image: nginx
+    volumes:
+      - "./nginx.conf:/etc/nginx/nginx.conf"
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - front
+  front: 
+    image: feedback-forms-front
+    build: ./kinnearjay.github.io
